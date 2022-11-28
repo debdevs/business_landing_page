@@ -382,14 +382,6 @@ background: var(--mainColor);
 .links .btn{
     background: none;
 }
-.showcase-area .container{
-    grid-template-columns: 1fr;
-}
-
-.person{
-    width:100%;
-    transform: none;
-}
 
 .overlay{
     display: block;
@@ -411,5 +403,57 @@ background: var(--mainColor);
 .big-wrapper.active .overlay{
 pointer-events: all;
 opacity: 1;
+}
+
+.showcase-area{
+    padding: 2.5rem 0;
+    max-width: 700px;
+    max-width: 0 auto;
+
+}
+.showcase-area .container{
+    grid-template-columns: 1fr;
+    justify-content: center;
+    grid-gap: 2rem;
+}
+
+.big-title{
+    font-size: 1.1rem;
+}
+.text{
+
+    font-size: .95rem;
+    margin: 1.4rem 0 1.5rem;
+}
+.person{
+    width:100%;
+    transform: none;
+}
+
+.logo h3{
+    font-size: 1.25rem;
+}
+
+.shape{
+    bottom: -180px;
+    left: -150px;
+}
+
+}
+
+@media only screen and (max-width:470px){
+.container{
+    padding: 0 1.5rem;
+}
+
+.big-title{
+    font-size: .9rem;
+}
+
+.text {
+    margin: 1.1rem 0 1.5rem;
+}
+.showcase-area .btn {
+    font-size: .8rem;
 }
 }
